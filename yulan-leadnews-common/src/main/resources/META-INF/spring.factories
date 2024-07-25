@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.yulan.common.exception.ExceptionCatch,\
+  com.yulan.common.swagger.SwaggerConfiguration,\
+  com.yulan.common.swagger.Swagger2Configuration,\
+  com.yulan.common.aliyun.GreenTextScan,\
+  com.yulan.common.aliyun.GreenImageScan,\
+  com.yulan.common.redis.CacheService,\
+  com.yulan.common.jackson.InitJacksonConfig

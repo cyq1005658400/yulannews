@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>yulan-leadnews</artifactId>
+        <groupId>com.yulan</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>yulan-leadnews-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>yulan-leadnews-user</module>
+        <module>yulan-leadnews-article</module>
+        <module>yulan-leadnews-wemedia</module>
+        <module>yulan-leadnews-schedule</module>
+        <module>yulan-leadnews-search</module>
+        <module>yulan-leadnews-behavior</module>
+        <module>yulan-leadnews-comment</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- 引入依赖模块 -->
+        <dependency>
+            <groupId>com.yulan</groupId>
+            <artifactId>yulan-leadnews-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yulan</groupId>
+            <artifactId>yulan-leadnews-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yulan</groupId>
+            <artifactId>yulan-leadnews-feign-api</artifactId>
+        </dependency>
+        <!-- Spring boot starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
